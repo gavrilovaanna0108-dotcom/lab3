@@ -25,11 +25,16 @@
 ## 2. Реализация программы
 ```c
 #include <stdio.h>
+double calc(double U, double R);
 void main() {
     double U, R, I;
-    U=7.3, R=2.5;
-    I=U/R;
+    scanf("%lf", &U);
+    scanf("%lf", &R);
+    I=calc(U, R);
     printf("%.2lf",I);
+}
+double calc(double U, double R){
+    return U/R;
 }
 ```
 ## 3. Результат работы программы
